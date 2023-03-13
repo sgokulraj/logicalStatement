@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime number</title>
+</head>
+
+<body>
+    <script>
+        let num = +prompt("enter a number", 1);
+
+
+        //Method-1
+        let bool = true;
+        for (let i = 2; i < num / 2; ++i) {
+            if ((num % i == 0)) {
+                bool = false
+                break;
+            }
+        }
+
+        if (bool) {
+            console.log(`${num} is prime number`);
+        }
+        else {
+            console.log((`${num} is composite number`));
+        }
+
+
+        //Method-2
+        // let bool = false;
+        // if (num == 2 || num == 3) {
+        //     bool = true;
+        // } else {
+        //     for (let i = 1; i <= num / 2; i++) {
+        //         if (((6 * i + 1) == num) || ((6 * i - 1) == num)) {
+        //             bool = true;
+        //             break;
+        //         }
+        //     }
+        // }
+        // if (bool) {
+        //     console.log("prime number");
+        // } else {
+        //     console.log("composite number");
+        // }
+    </script>
+
+</body>
+
+</html>

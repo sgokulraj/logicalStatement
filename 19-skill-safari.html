@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill safari</title>
+</head>
+
+<body>
+    <h1>To print skill safari</h1>
+    <script>
+        let num = +prompt("enter a num", 1);
+        if (isNaN(num)) {
+            console.log("enter only numbers");
+        } else {
+            for (let i = 1; i <= num; i++) {
+                if ((i % 3 == 0) && (i % 5 == 0)) {
+                    console.log("skill safari");
+                } else if (i % 3 == 0) {
+                    console.log("skill");
+                } else if (i % 5 == 0) {
+                    console.log("safari");
+                } else {
+                    console.log(`${i}`);
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

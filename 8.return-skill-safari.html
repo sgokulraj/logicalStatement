@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Returning skill safari for multiples of 3 and 5</title>
+</head>
+
+<body>
+    <h1>Return "skill safari" based on mult of 3 and 5</h1>
+    <script>
+        let num = +prompt("enter a number", 1);
+        if (isNaN(num)) {
+            console.log("enter only numbers");
+        } else if ((num % 3 == 0) && (num % 5 == 0)) {
+            console.log("skill safari");
+        } else if (num % 3 == 0) {
+            console.log("skill");
+        } else if (num % 5 == 0) {
+            console.log("safari");
+        } else {
+            console.log(`${num} is not a multiple of 3 or 5`);
+        }
+    </script>
+</body>
+
+</html>

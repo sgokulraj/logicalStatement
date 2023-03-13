@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum-is-even</title>
+</head>
+
+<body>
+    <h1>To find the sum of two numbers is even or odd</h1>
+    <script>
+        // Method -1
+        // let num1= +prompt("enter first number",1);
+        // let num2= +prompt("enter second number",1);
+        // if(isNaN(num1) || isNaN(num2)){
+        //     console.log("enter numbers only");
+        // }else {
+        //     let sum=num1+ num2;
+        //     let result = sum % 2;
+        //     if( result == 0){
+        //         console.log(`the sum of ${num1} and ${num2} is ${sum} and it is even`);
+        //     } else{
+        //         console.log(`the sum of ${num1} and ${num2} is ${sum} and it is odd`);
+
+        //     }
+        // }
+
+
+        // Method - 2
+        let num1 = +prompt("Enter first number", 1);
+        let num2 = +prompt("Enter second number", 1);
+        let result = ((isNaN(num1)) || (isNaN(num2))) ? console.log('enter numbers') : (((num1 % 2 == 0) && (num2 % 2 == 0)) || ((num1 % 2 != 0) && (num2 % 2 != 0))) ?
+            console.log(`The sum of ${num1} and ${num2} is ${num1 + num2} and it is even`) :
+            console.log(`The sum of ${num1} and ${num2} is ${num1 + num2} and it is odd`);
+          
+    </script>
+</body>
+
+</html>

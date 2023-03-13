@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse a sentence</title>
+</head>
+<body>
+    <h1>Reverse a sentence word by word</h1>
+    <script>
+        let str = prompt("enter a string", "hello");
+        let array = str.split(" ");
+        let i = array.length -1;
+        for(; i >= 0 ; i--){
+            document.write(`${array[i]} \t`);
+        }
+
+        //reversing the word letter by letter
+        // for(;i>=0;i--){
+        //     let j =array[i].length-1;
+        //     for(;j>=0;j--){
+        //         document.write(`${array[i][j]}`);
+        //     }
+        //     document.write(`\t`);
+        // }
+    </script>
+</body>
+</html>

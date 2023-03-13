@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integers</title>
+</head>
+<body>
+    <h1>To find whether two numbers are positive integers or negative integers</h1>
+    <script>
+        let num1 = +prompt("enter first number",1);
+        let num2 = +prompt("enter second number",1);
+        if (isNaN(num1)|| isNaN(num2)){
+            console.log("enter numbers only");
+        }else if((num1 > 0) && (num2 > 0)){
+            console.log("num1 and num2 are positive integers");
+        }else if((num1 < 0 ) &&(num2 < 0)){
+            console.log("num1 and num2 are negative integers");
+        }else if((num1 == 0)||(num2 == 0)){
+            if(num1 == 0 && num2 < 0){
+                console.log("num1 is zero and num2 is negative integer");
+            }else if(num1 == 0 && num2 > 0){
+                console.log("num1 is zero and num2 is positive integer");
+            }else if(num2 == 0 && num1 < 0){
+                console.log("num2 is zero and num1 is negative integer");
+            }else if(num2 == 0 && num1 > 0){
+                console.log("num2 is zero and num1 is positive integer");
+            }else{
+                console.log("num1 and num2 are zero");
+            }
+        }else{
+            if(num1 > 0){
+                console.log("num1 is positive integer and num2 is negative integer");
+            }else{
+                console.log("num1 is negative integer and num2 is positive integer");
+
+            }
+        }
+    </script>
+</body>
+</html>

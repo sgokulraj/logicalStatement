@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Longest word</title>
+</head>
+<body>
+    <script>
+        let str = prompt("enter a string", "hello");
+        let array = str.split(' ');
+
+        // //Method-1
+        // let str2='';
+        // let result =0;
+        // for(let i = 0 ; i <array.length ; i++){
+        //     if(result < array[i].length){
+        //         result = array[i].length;
+        //         str2=array[i];
+        //     }
+
+        // }
+        // console.log((`the longest word is ${str2}. it has ${result} letters`));
+
+        //Method-2
+        // let length = 0;
+        // for(let word of array){
+        //     if(word.length > length){
+        //         length = word.length;
+        //     }
+        // }
+        // console.log(length);
+
+        //Method-3
+        let countChar = 0;
+        let result = 0;
+        let longWord =0;
+        let strlength = str.length;
+        for(let i = 0; i<str.length ; i++){
+            if(str[i] !== ' '){
+                countChar++;
+            }else{
+                longWord = Math.max(result,countChar);
+                result = countChar;
+                countChar=0;
+            }
+        longWord = Math.max(result,countChar);
+        }
+        console.log(longWord);
+    </script>
+</body>
+</html>

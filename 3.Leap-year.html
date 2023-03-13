@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap Year</title>
+</head>
+
+<body>
+    <h1>Leap year or Ordinary year</h1>
+    <script>
+        let year = +prompt("Enter year to check if it is leap year or not", 1);
+
+        if (isNaN(year)) {
+            console.log("enter year only");
+        } else if (year % 100 == 0) {
+            if (year % 400 == 0) {
+                console.log(`${year} is a leap year`);
+            } else {
+                console.log(`${year} is a ordinary year`);
+            }
+        } else if (year % 4 == 0) {
+            console.log(`${year} is a leap year`);
+        } else {
+            console.log(`${year} is a ordinary year`);
+        }
+
+    </script>
+</body>
+
+</html>

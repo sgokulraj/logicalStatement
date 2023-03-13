@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd-Even</title>
+
+</head>
+
+<body>
+    <h1>To find Odd or Even</h1>
+    <script>
+        let num1 = +prompt("Enter first number", 1);
+        let num2 = +prompt("Enter second number", 1);
+        let result = ((isNaN(num1)) || (isNaN(num2)))?   console.log('enter numbers') : ((num1 % 2 == 0) && (num2 % 2 == 0)) ? console.log(`${num1} and ${num2} are even`) : ((num1 % 2 != 0) && (num2% 2 !=0)) ? 
+        console.log(`${num1} and ${num2} are odd`) : (num1 % 2 ==0) ? console.log(`${num1} is even and ${num2} is odd`) : 
+        console.log(`${num1} is odd and ${num2} is even`)  ;
+         
+        // let result1= (num1 % 2 == 0) ? console.log(`${num1} is even`) : console.log(`${num1} is odd`);
+        // let result2= (num2 % 2 == 0) ? console.log(`${num2} is even`) : console.log(`${num2} is odd`);
+    </script>
+</body>
+
+</html>

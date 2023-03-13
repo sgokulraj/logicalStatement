@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base and exponent</title>
+</head>
+
+<body>
+    <h1>To find the power of a number</h1>
+    <script>
+        let num = +prompt("enter a number", 1);
+        let exponent = +prompt("enter the exponent", 1);
+        // let result = num ** exponent;
+        // console.log(`${num} ^ ${exponent} = ${result}`);
+        let result = 1;
+        let power = Math.abs(exponent);
+        do {
+            result = result * num;
+            power--;
+        } while (power != 0)
+        // console.log(`${num} ^ ${exponent} = ${result}`);
+
+
+        if (exponent < 0) {
+            let result2 = 1 / result;
+            console.log(`${num} ^ ${exponent} = ${result2}`);
+        } else {
+            console.log(`${num} ^ ${exponent} = ${result}`);
+        }
+    </script>
+</body>
+
+</html>

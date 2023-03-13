@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple of 3 and 5</title>
+</head>
+<body>
+    <h1>to find multiples of 3 and 5</h1>
+    <script>
+        let num = +prompt("enter a number", 1);
+        if(isNaN(num)){
+            console.log("enter numbers only");
+        } else if ((num % 3 == 0) && (num % 5 == 0)){
+            console.log(`${num} is a multiple of 3  and 5`);
+        } else{
+            console.log(`${num} is not a multiple of 3 and 5`);
+        }
+    </script>
+</body>
+</html>
